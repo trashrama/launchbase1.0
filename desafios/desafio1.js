@@ -1,5 +1,5 @@
 
-console.log("1.1 - Cálculo de IMC")
+console.log("\n1.1 - Cálculo de IMC\n")
 const nome = "Marcos"
 const peso = 69
 const altura = 1.65
@@ -13,14 +13,14 @@ else{
     console.log(`${nome} você não está acima do peso`)
 }
 
-console.log("1.2 - Cálculo de Aposentadoria")
+console.log("\n1.2 - Cálculo de Aposentadoria\n")
 
 const usuario = [{
     
     nome: "Beto",
     idade: 50,
     sexo: "M",
-    contribuicao: 60
+    contribuicao: 20
  }
 ]
 const anoContribM = 35
@@ -28,11 +28,11 @@ const anoContribF = 30
 const calculoAposentadoria = usuario[0].idade + usuario[0].contribuicao
 
 
-const aposentadoriaHomem = usuario.sexo === "M" && calculoAposentadoria >= 95 && usuario.contribuicao >= anoContribM
-const aposentadoriaMulher = usuario.sexo === "F" && calculoAposentadoria >= 85 && usuario.contribuicao >= anoContribF
+const aposentadoriaHomem = usuario[0].sexo === "M" && calculoAposentadoria >= 95 && usuario[0].contribuicao >= anoContribM
+const aposentadoriaMulher = usuario[0].sexo === "F" && calculoAposentadoria >= 85 && usuario[0].contribuicao >= anoContribF
 if(aposentadoriaHomem == true || aposentadoriaMulher == true) {
-    console.log(`${usuario.nome}, você pode se aposentar!`)
+    console.log(`${usuario[0].nome}, você pode se aposentar!`)
 }
 else{
-    console.log(`${usuario.nome}, você ainda não pode se aposentar!`)
+    console.log(`${usuario[0].nome}, você ainda não pode se aposentar!`)
 }
